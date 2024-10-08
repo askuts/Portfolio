@@ -148,7 +148,7 @@ params:
        # - icon: fab fa-x-twitter
        #   url: https://example.com
       customIcons:
-        - icon: /tg.png
+        - icon: /schmid_znachek-telegrama.png
           url: "https://t.me/as_kuts"
 
   # About
