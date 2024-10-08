@@ -42,13 +42,16 @@
             <div class="about-section single-column-list">
                 <h3>{{ .Params.about.title }}</h3>
                 <div class="about-content">
-                    {{ with split .Params.about.content "\n" }}
-                        {{ range . }}
-                        <p>{{ . }}</p>
+                    <ul class="about-content-list">
+                        {{ with split .Params.about.content "\n" }}
+                            {{ range . }}
+                            <li>{{ . }}</li>
+                            {{ end }}
                         {{ end }}
-                    {{ end }}
+                    </ul>
                 </div>
             </div>
+
             
             <div class="skills-section">
                 <h3>{{ .Params.skills.title }}</h3>
