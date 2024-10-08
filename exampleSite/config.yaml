@@ -86,13 +86,13 @@ params:
 
   # color preference
   # When using hex codes for colors, quotations must be used along with the # sign
-  # color:
+  color:
   #   textColor: "#343a40"
   #   secondaryTextColor: "#6c757d"
-  #   textLinkColor: "#007bff"
+  #   textLinkColor: "#007bff"  #противный голубой
   #   backgroundColor: "#eaedf0"
   #   secondaryBackgroundColor: "#64ffda1a"
-  #   primaryColor: "#007bff"
+    primaryColor: "#b06967"
   #   secondaryColor: "#f8f9fa"
 
   #   darkmode:
@@ -127,41 +127,46 @@ params:
   # Hero
   hero:
     enable: true
-    intro: "Hi, my name is"
-    title: "Isabella."
-    subtitle: "I build things for the web"
-    content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that look great, feel fantastic, and function correctly."
-    image: /images/hero.svg
+    intro: "Привет, меня зовут"
+    title: "Aнастасия."
+    subtitle: "Я люблю находить связь в данных."
+    content: "Нравится копаться в данных и строить гипотезы. Самое интересное - их опровергать)"
+    image: profile.jpg
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
     button:
       enable: true
-      name: "Resume"
-      url: "#"
+      name: "Резюме"
+      url: "https://hh.ru/resume/93f42dc3ff0d7b1c960039ed1f52734175794a"
       download: true
       newPage: false
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
           url: https://example.com
-        - icon: fab fa-x-twitter
-          url: https://example.com
+       # - icon: fab fa-x-twitter
+       #   url: https://example.com
       customIcons:
-        - icon: /fav.png
-          url: "https://example.com"
+        - icon: tg.png
+          url: "https://t.me/as_kuts"
 
   # About
   about:
     enable: true
-    title: "About Me"
-    image: "/images/me.png"
+    title: "Обо мне"
+    image: profile_2.jpg
     content: |-
-      I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA.
+      Аналитик данных с опытом работы в крупных финансовых компаниях и навыками внедрения аналитических решений для улучшения бизнес-показателей. 
+      
+      Специализируюсь на разработке и автоматизации отчетности, анализе данных и визуализации результатов для топ-менеджмента.
 
-      I am currently working on a project that will be used to help people find the best way to get around the city.
+      Опыт в построении финансовых моделей, управлении бюджетом и разработке маркетинговых стратегий на основе аналитики.
+
+      Умею работать с большими массивами данных, находить закономерности и предлагать решения для оптимизации процессов.
+
     skills:
-      enable: true
+      enable: false
       title: "Here are a few technologies I've been working with recently:"
       items:
         - "HTML"
@@ -174,114 +179,82 @@ params:
   # Experience
   experience:
     enable: true
-    # title: "Custom Name"
+    title: "Опыт работы"
     items:
-      - job: "Senior Software Developer"
-        company: "Facebook"
-        companyUrl: "https://example.com"
-        date: "Jan 2022 - present"
+      - job: "Ведущий аналитик"
+        company: "Альфа-Банк"
+        companyUrl: "https://alfabank.ru/"
+        date: "Дек 2022 - авг 2023"
         featuredLink:
-          enable: true
+          enable: false
           name: "View the project"
           url: "https://example.com"
-        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+        content: "- Разрабатывала, формировала и автоматизировала управленческую отчетность в Excel с использованием Power Query, улучшившей прозрачность и эффективность отчетного процесса;
 
-      - job: "Software Developer"
-        company: "Amazon"
-        companyUrl: "https://example.com"
-        date: "Sep 2020 - Dec 2021"
+- Выдвигала и тестировала гипотезы по улучшению бизнес-процессов, что привело к повышению финансовых показателей;
+
+- Планировала и контролировала бюджет зарплатного бизнеса, проводила анализ эффективности затрат"
+
+      - job: "Консультант в Отделе Оценка бизнеса"
+        company: "Kept"
+        companyUrl: "https://kpmg.ru"
+        date: "Дек 2021 - дек 2022"
         featuredLink:
-          enable: true
-          url: "https://example.com"
-        info:
-          enable: true
-          content: I worked as a software developer for more than one year in Amazon.
-        content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
-
-      - job: "Junior Software Developer"
-        company: "Apple"
-        companyUrl: "https://example.com"
-        date: "Jan 2020 - Aug 2020"
-        info:
           enable: false
-        featuredLink:
-          enable: true
           url: "https://example.com"
-        content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
-
-      - job: "UI/UX Designer"
-        company: "Netflix"
-        companyUrl: "https://example.com"
-        date: "June 2017 - Nov 2019"
-        featuredLink:
+        info:
           enable: true
-          url: "https://example.com"
-        content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+          content: Год проработала в оценке бизнеса в Кэпт (ex. KPMG).
+        content: "- Строила финансовые модели для TMT и O&G секторов;
 
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
+- Проводила финансовый анализ исторических результатов и прогнозов компании, а также отраслевые и макроэкономические исследования;
 
-      - job: "Product Designer"
-        company: "Google"
-        companyUrl: "https://example.com"
-        date: "Feb 2016 - Mar 2017"
-        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+- Занималась подготовкой и проверкой отчетов по стандартам ФСО и МСО."
+
 
   # Education
   education:
     enable: true
-    # title: "Custom Name"
+    title: "Образование"
     index: false
     items:
-      - title: "Master of Business Administration"
+      - title: "Магистр менеджмента. Управление инвестиционными проектами"
         school:
-          name: "University of California, Berkeley"
-          url: "https://example.org"
-        date: "2013 - 2015"
-        GPA: "3.8 out of 5.0"
+          name: 'Национальный исследовательский университет "Высшая школа экономики", Москва'
+          url: "https://www.hse.ru/"
+        date: "2022 - 2024"
+        GPA: "7.4 из 10.0"
         content: |-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-      - title: "Bachelor of Science in Computer Science"
+          Основные дисциплины
+            - Бизнес-аналитика как инструмент эффективного управления.
+            - Методы исследований в финансовом менеджменте.
+        featuredLink:
+          enable: true
+          name: "Моя выпускная работа"
+          url: "https://www.hse.ru/edu/vkr/925076798"
+
+      - title: "Бакалавр экономики. Экономика"
         school:
-          name: "Massachusetts Institute of Technology"
-          url: "https://example.org"
-        date: "2009 - 2013"
-        GPA: "3.9 out of 5.0"
+          name: 'Национальный исследовательский университет "Высшая школа экономики", Москва'
+          url: "https://www.hse.ru/"
+        date: "2019 - 2022"
+        GPA: "7.8 из 10.0"
         content: |-
           I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
           - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
           - Face mask detection using a single convolutional neural network.
 
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+          Основные дисциплины
+            - Эконометрика.
+            - Анализ данных в экономике и финансах.
         featuredLink:
           enable: true
-          name: "My academic record"
-          url: "https://example.com"
-      - title: "High School"
-        school:
-          name: "Thomas Jefferson High School for Science and Technology."
-          url: "https://example.org"
-        GPA: "4.2 out of 5.0"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
+          name: "Моя выпускная работа"
+          url: "https://www.hse.ru/edu/vkr/623261718"
 
   # Achievements
   achievements:
-    enable: true
+    enable: false
     # title: "Custom Name"
     items:
       - title: Google kickstart runner
@@ -304,7 +277,7 @@ params:
   # projects
   projects:
     enable: true
-    # title: "Custom Name"
+    # title: "Проекты"
     items:
       - title: Hugo Profile
         content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
