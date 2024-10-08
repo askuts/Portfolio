@@ -40,35 +40,35 @@
             {{ end }}
 
             <div class="about-section single-column-list">
-    <h3>{{ .Params.about.title }}</h3>
-    <div class="about-content">
-        {{ with split .Params.about.content "\n" }}
-            {{ range . }}
-            <p>{{ . }}</p>
-            {{ end }}
-        {{ end }}
-    </div>
-</div>
-
-<div class="skills-section">
-    <h3>{{ .Params.skills.title }}</h3>
-    <div class="row">
-        <div class="col-6">
-            <ul>
-                {{ range first (div (len .Params.skills.items) 2) .Params.skills.items }}
-                <li>{{ . }}</li>
-                {{ end }}
-            </ul>
-        </div>
-        <div class="col-6">
-            <ul>
-                {{ range after (div (len .Params.skills.items) 2) .Params.skills.items }}
-                <li>{{ . }}</li>
-                {{ end }}
-            </ul>
-        </div>
-    </div>
-</div>
+                <h3>{{ .Params.about.title }}</h3>
+                <div class="about-content">
+                    {{ with split .Params.about.content "\n" }}
+                        {{ range . }}
+                        <p>{{ . }}</p>
+                        {{ end }}
+                    {{ end }}
+                </div>
+            </div>
+            
+            <div class="skills-section">
+                <h3>{{ .Params.skills.title }}</h3>
+                <div class="row">
+                    <div class="col-6">
+                        <ul>
+                            {{ range first (div (len .Params.skills.items) 2) .Params.skills.items }}
+                            <li>{{ . }}</li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul>
+                            {{ range after (div (len .Params.skills.items) 2) .Params.skills.items }}
+                            <li>{{ . }}</li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
     <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
         <i class="fas fa-angle-up"></i>
