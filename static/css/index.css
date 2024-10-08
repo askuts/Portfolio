@@ -238,7 +238,7 @@ header .navbar.animate {
 }
 
 /* Стили для навыков */
-#skills ul {
+#about .skills ul {
     display: grid !important; /* Используем сетку */
     grid-template-columns: repeat(2, 1fr); /* Две равные колонки */
     gap: 0px 10px !important; /* Промежуток между элементами */
@@ -248,7 +248,7 @@ header .navbar.animate {
 }
 
 /* Буллет для списка навыков */
-#skills ul li::before {
+#about .skills ul li::before {
     content: "▹" !important; /* Буллет для навыков */
     color: var(--primary-color); /* Цвет буллета */
     position: absolute; /* Абсолютное позиционирование */
