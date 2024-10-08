@@ -237,6 +237,15 @@ header .navbar.animate {
     line-height: 1.7rem !important;
 }
 
+#about .skills ul {
+    display: grid; /* Используем сетку для колоночного отображения */
+    grid-template-columns: repeat(2, 1fr); /* Две равные колонки */
+    gap: 10px; /* Промежуток между элементами */
+    padding: 0; /* Убираем внутренние отступы */
+    margin: 20px 0; /* Устанавливаем отступы */
+    list-style: none; /* Убираем маркеры списка */
+}
+
 #about a {
     display: inline-block;
     text-decoration: none;
