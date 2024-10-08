@@ -1,12 +1,20 @@
-/* Переопределение стилей для списка в секции "Обо мне" */
+/* Обеспечиваем одноколонное отображение в секции "Обо мне" */
+#about-me .about-content-list {
+    display: block !important; /* Убедитесь, что это блочный элемент */
+    column-count: 1 !important; /* Устанавливаем количество колонок в 1 */
+    list-style-position: outside !important; /* Установите маркеры вне списка */
+}
+
 #about-me .about-content-list li {
-    display: list-item !important; /* Включаем отображение как список */
-    text-align: left !important; /* Устанавливаем выравнивание по левому краю */
-    list-style-type: disc !important; /* Устанавливаем маркеры */
-    unicode-bidi: normal !important; /* Сбрасываем свойства bidirectional */
-    padding-left: 20px !important; /* Добавляем отступ */
-    margin-bottom: 5px; /* Добавляем небольшое расстояние между элементами списка */
-    column-count: 1 !important; /* Принудительно устанавливаем один столбец */
+    display: list-item !important; /* Убедитесь, что это отображается как элемент списка */
+    margin-bottom: 0.5em; /* Добавляем расстояние между элементами списка */
+}
+
+/* Убираем возможные глобальные стили, влияющие на списки */
+.about-section.single-column-list ul {
+    column-count: 1 !important; /* Убедитесь, что у вас одна колонка */
+    padding-left: 20px; /* Добавляем отступ слева для маркеров */
+    margin-bottom: 1.2em; /* Добавляем отступ внизу */
 }
 
 
