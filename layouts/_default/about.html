@@ -39,52 +39,37 @@
             </div>
             {{ end }}
 
-            <div class="col-sm-12 col-md-12 col-lg-6 pt-4 p-2">
-                <div class="pr-lg-4">
-                    <article class="page-content p-2">
-                        <!-- Секция "Обо мне" с отдельными строками -->
-                        {{ if .Params.about.enable }}
-                        <div class="about-section">
-                            <h3>{{ .Params.about.title }}</h3>
-                            <!-- Используем <div> вместо <p> и разделяем каждый пункт -->
-                            <div class="about-content">
-                                {{ with split .Params.about.content "\n" }}
-                                    {{ range . }}
-                                    <p>{{ . }}</p>
-                                    {{ end }}
-                                {{ end }}
-                            </div>
-                        </div>
-                        {{ end }}
+            <div class="about-section single-column-list">
+    <h3>{{ .Params.about.title }}</h3>
+    <div class="about-content">
+        {{ with split .Params.about.content "\n" }}
+            {{ range . }}
+            <p>{{ . }}</p>
+            {{ end }}
+        {{ end }}
+    </div>
+</div>
 
-                        <!-- Секция "Навыки" -->
-                        {{ if .Params.skills.enable }}
-                        <div class="skills-section">
-                            <h3>{{ .Params.skills.title }}</h3>
-                            <div class="row">
-                                <!-- Делим список навыков на два столбца -->
-                                <div class="col-6">
-                                    <ul>
-                                        {{ range first (div (len .Params.skills.items) 2) .Params.skills.items }}
-                                        <li>{{ . }}</li>
-                                        {{ end }}
-                                    </ul>
-                                </div>
-                                <div class="col-6">
-                                    <ul>
-                                        {{ range after (div (len .Params.skills.items) 2) .Params.skills.items }}
-                                        <li>{{ . }}</li>
-                                        {{ end }}
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        {{ end }}
-                    </article>
-                </div>
-            </div>
+<div class="skills-section">
+    <h3>{{ .Params.skills.title }}</h3>
+    <div class="row">
+        <div class="col-6">
+            <ul>
+                {{ range first (div (len .Params.skills.items) 2) .Params.skills.items }}
+                <li>{{ . }}</li>
+                {{ end }}
+            </ul>
+        </div>
+        <div class="col-6">
+            <ul>
+                {{ range after (div (len .Params.skills.items) 2) .Params.skills.items }}
+                <li>{{ . }}</li>
+                {{ end }}
+            </ul>
         </div>
     </div>
+</div>
+
     <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
         <i class="fas fa-angle-up"></i>
     </button>
