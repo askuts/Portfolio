@@ -1,11 +1,11 @@
 /* Секция "Обо мне" — контент отображается построчно */
-.about-content-list {
-    list-style-type: disc; /* Применяет стандартные буллеты */
-    padding-left: 20px;
-    column-count: 1; /* Устанавливаем одну колонку */
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    display: block; /* Отображение построчно */
+#about-me .about-content-list {
+    list-style-type: disc !important; /* Применяем диски для буллетов */
+    padding-left: 20px !important;
+    column-count: 1 !important; /* Устанавливаем одну колонку */
+    -webkit-column-count: 1 !important;
+    -moz-column-count: 1 !important;
+    display: block !important; /* Устанавливаем отображение построчно */
 }
 
 /* Секция "Навыки" — отображение в два столбца */
