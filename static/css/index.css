@@ -237,21 +237,22 @@ header .navbar.animate {
     line-height: 1.7rem !important;
 }
 
+/* Стили для навыков */
 #about .skills ul {
-    display: grid !important;
-    grid-template-columns: repeat(2, minmax(140px, 200px)) !important;
-    gap: 0px 10px !important;
-    padding: 0px !important;
-    margin: 20px 0px 0px;
-    overflow: hidden !important;
-    list-style: none;
+    display: grid !important; /* Используем сетку */
+    grid-template-columns: repeat(2, 1fr); /* Две равные колонки */
+    gap: 0px 10px !important; /* Промежуток между элементами */
+    padding: 0px !important; /* Убираем внутренние отступы */
+    margin: 20px 0px 0px; /* Отступы сверху */
+    list-style: none; /* Убираем маркеры списка */
 }
 
+/* Буллет для списка навыков */
 #about .skills ul li::before {
-    content: "▹" !important;
-    color: var(--primary-color);
-    position: absolute;
-    left: 0px;
+    content: "▹" !important; /* Буллет для навыков */
+    color: var(--primary-color); /* Цвет буллета */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0px; /* Сдвиг влево */
 }
 
 #about a {
