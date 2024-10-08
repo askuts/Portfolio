@@ -327,7 +327,7 @@ params:
   #Contact
   contact:
     enable: true
-    # title: "Custom Name"
+    title: "Контакты"
     content: Всегда открыта для общения на почте. Если у вас есть вопросы или вы просто хотите поздороваться, я сделаю все возможное, чтобы вам ответить!
     btnName: Mail me
     btnLink: mailto:as.kuts@mail.ru
