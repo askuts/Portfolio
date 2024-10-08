@@ -238,23 +238,17 @@ header .navbar.animate {
 }
 
 #about .skills ul {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 200px));
-    gap: 0px 10px;
-    padding: 0px;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(140px, 200px)) !important;
+    gap: 0px 10px !important;
+    padding: 0px !important;
     margin: 20px 0px 0px;
-    overflow: hidden;
+    overflow: hidden !important;
     list-style: none;
 }
 
-#about .skills ul li {
-    position: relative;
-    margin-bottom: 10px;
-    padding-left: 20px;
-}
-
 #about .skills ul li::before {
-    content: "▹";
+    content: "▹" !important;
     color: var(--primary-color);
     position: absolute;
     left: 0px;
