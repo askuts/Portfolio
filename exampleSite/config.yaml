@@ -131,7 +131,7 @@ params:
     title: "Aнастасия."
     subtitle: "Я люблю находить связь в данных."
     content: "Нравится копаться в данных и строить гипотезы. Самое интересное - их опровергать)"
-    image: profile.jpg
+    image: /profile.jpg
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
