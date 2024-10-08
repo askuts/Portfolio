@@ -42,11 +42,18 @@
             <div class="col-sm-12 col-md-12 col-lg-6 pt-4 p-2">
                 <div class="pr-lg-4">
                     <article class="page-content p-2">
-                        <!-- Секция "Обо мне" -->
+                        <!-- Секция "Обо мне" с отдельными строками -->
                         {{ if .Params.about.enable }}
                         <div class="about-section">
                             <h3>{{ .Params.about.title }}</h3>
-                            <p>{{ .Params.about.content }}</p>
+                            <!-- Используем <div> вместо <p> и разделяем каждый пункт -->
+                            <div class="about-content">
+                                {{ with split .Params.about.content "\n" }}
+                                    {{ range . }}
+                                    <p>{{ . }}</p>
+                                    {{ end }}
+                                {{ end }}
+                            </div>
                         </div>
                         {{ end }}
 
