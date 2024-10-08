@@ -1,12 +1,11 @@
-/* Секция "Обо мне" — контент отображается в одну колонку */
-.about-section.single-column-list ul,
-.about-section.single-column-list p {
-    column-count: 1 !important;
-    -webkit-column-count: 1 !important;
-    -moz-column-count: 1 !important;
-    display: block;
-    list-style-type: disc;
-    margin-left: 20px;
+/* Секция "Обо мне" — контент отображается построчно */
+.about-content-list {
+    list-style-type: disc; /* Применяет стандартные буллеты */
+    padding-left: 20px;
+    column-count: 1; /* Устанавливаем одну колонку */
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    display: block; /* Отображение построчно */
 }
 
 /* Секция "Навыки" — отображение в два столбца */
@@ -19,9 +18,9 @@
 }
 
 .skills-section ul {
-    column-count: 1;
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
+    column-count: 2; /* Две колонки */
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
     list-style-type: disc;
     padding-left: 20px;
 }
