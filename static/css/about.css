@@ -1,12 +1,14 @@
-/* Секция "Обо мне" — контент отображается построчно */
-#about-me .about-content-list {
-    list-style-type: disc !important; /* Применяем диски для буллетов */
-    padding-left: 20px !important;
-    column-count: 1 !important; /* Устанавливаем одну колонку */
-    -webkit-column-count: 1 !important;
-    -moz-column-count: 1 !important;
-    display: block !important; /* Устанавливаем отображение построчно */
+/* Переопределение стилей для списка в секции "Обо мне" */
+#about-me .about-content-list li {
+    display: list-item !important; /* Включаем отображение как список */
+    text-align: left !important; /* Устанавливаем выравнивание по левому краю */
+    list-style-type: disc !important; /* Устанавливаем маркеры */
+    unicode-bidi: normal !important; /* Сбрасываем свойства bidirectional */
+    padding-left: 20px !important; /* Добавляем отступ */
+    margin-bottom: 5px; /* Добавляем небольшое расстояние между элементами списка */
+    column-count: 1 !important; /* Принудительно устанавливаем один столбец */
 }
+
 
 /* Секция "Навыки" — отображение в два столбца */
 .skills-section .row {
