@@ -22,7 +22,7 @@ markup:
     renderer:
       unsafe: true
 
-Menus:
+#Menus:
   main:
     - identifier: blog
       name: Blog
