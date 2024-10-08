@@ -148,14 +148,14 @@ params:
        # - icon: fab fa-x-twitter
        #   url: https://example.com
       customIcons:
-        - icon: tg.png
+        - icon: /tg.png
           url: "https://t.me/as_kuts"
 
   # About
   about:
     enable: true
     title: "Обо мне"
-    image: profile_2.jpg
+    image: /profile_2.jpg
     content: |-
       Аналитик данных с опытом работы в крупных финансовых компаниях и навыками внедрения аналитических решений для улучшения бизнес-показателей. 
       
