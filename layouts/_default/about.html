@@ -1,3 +1,15 @@
+{{ define "head" }}
+<meta name="description" content="{{ .Params.description }}">
+<link rel="stylesheet" href="{{.Site.Params.staticPath}}/css/about.css">
+
+<!-- fontawesome -->
+<script defer src="{{.Site.Params.staticPath}}/fontawesome-6/all-6.4.2.js"></script>
+{{ end }}
+
+{{ define "title" }}
+{{.Title }} | {{ .Site.Title }}
+{{ end }}
+
 {{ define "main" }}
 <section id="single">
     <div class="container">
@@ -39,52 +51,19 @@
             </div>
             {{ end }}
 
-            <!-- Секция "Обо мне" с уникальным классом -->
-            <div class="col-sm-12 col-md-12 col-lg-8 about-content">
-                <div class="about-section" id="about-me">
-                    <h3>{{ .Params.about.title }}</h3>
-                    <div class="about-content">
-                        <ul class="about-content-list">
-                            {{ with split .Params.about.content "\n" }}
-                                {{ range . }}
-                                <li>{{ . }}</li>
-                                {{ end }}
-                            {{ end }}
-                        </ul>
-                    </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 pt-4 p-2">
+                <div class="pr-lg-4">
+                    <article class="page-content p-2">
+                        {{ .Content | emojify }}
+                    </article>
                 </div>
             </div>
-
-            <!-- Секция "Навыки" с отдельным классом -->
-            <div class="col-sm-12 col-md-12 col-lg-8 skills-content">
-                <div class="skills-section" id="skills">
-                    <h3>{{ .Params.skills.title }}</h3>
-                    <div class="row">
-                        <div class="col-6">
-                            <ul class="skills-list-left">
-                                {{ range first (div (len .Params.skills.items) 2) .Params.skills.items }}
-                                <li>{{ . }}</li>
-                                {{ end }}
-                            </ul>
-                        </div>
-                        <div class="col-6">
-                            <ul class="skills-list-right">
-                                {{ range after (div (len .Params.skills.items) 2) .Params.skills.items }}
-                                <li>{{ . }}</li>
-                                {{ end }}
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
+    <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
+        <i class="fas fa-angle-up"></i>
+    </button>
 </section>
-
-<button class="p-2 px-3" onclick="topFunction()" id="topScroll">
-    <i class="fas fa-angle-up"></i>
-</button>
 
 <script>
     var topScroll = document.getElementById("topScroll");
@@ -103,4 +82,5 @@
         document.documentElement.scrollTop = 0;
     }
 </script>
+
 {{ end }}
