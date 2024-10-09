@@ -228,6 +228,10 @@ params:
           Основные дисциплины
             - Бизнес-аналитика как инструмент эффективного управления.
             - Методы исследований в финансовом менеджменте.
+
+          Написала и опубликовала ВКР на тему
+          - Скоринговые подходы к оценке инвестиционной привлекательности инновационных проектов
+          
         featuredLink:
           enable: true
           name: "Моя выпускная работа"
@@ -240,13 +244,13 @@ params:
         date: "2019 - 2022"
         GPA: "7.8 из 10.0"
         content: |-
-          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-          - Face mask detection using a single convolutional neural network.
-
           Основные дисциплины
-            - Эконометрика.
-            - Анализ данных в экономике и финансах.
+          - Эконометрика.
+          - Анализ данных в экономике и финансах.
+          
+          Написала и опубликовала ВКР на тему
+          - Оценка вероятности потери работы в период коронакризиса
+         
         featuredLink:
           enable: true
           name: "Моя выпускная работа"
