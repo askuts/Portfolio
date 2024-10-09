@@ -1,32 +1,29 @@
-/* About Section - Буллеты для секции "Обо мне" */
-.about-me {
-    list-style-type: disc; /* Буллеты по умолчанию */
-    padding-left: 1.2rem; /* Отступ слева для списка */
+/* Стили для секции "Обо мне" */
+.about-content .about-section .about-content-list {
+    list-style-type: disc; /* Буллеты с точками для секции "Обо мне" */
+    padding-left: 1.2rem;
     margin-top: 1rem;
 }
 
-.about-me li {
-    margin-bottom: 0.5rem; /* Отступ между строками */
+.about-content .about-content-list li {
+    margin-bottom: 0.5rem;
 }
 
-/* Skills Section - Двухколоночный макет и треугольные буллеты */
-.skills ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr) !important; /* Две колонки */
-    list-style: none; /* Убираем стандартные маркеры */
-    margin: 0;
+/* Стили для секции "Навыки" */
+.skills-content .skills-section ul {
+    list-style: none; /* Убираем стандартные буллеты */
     padding: 0;
 }
 
-.skills ul li {
+.skills-content .skills-section ul li {
     position: relative;
-    padding-left: 20px; /* Отступ слева для буллета */
-    margin-bottom: 10px; /* Отступ между строками */
+    padding-left: 20px; /* Отступ для треугольного буллета */
+    margin-bottom: 10px;
 }
 
-.skills ul li::before {
+.skills-content .skills-section ul li::before {
     content: "▹"; /* Треугольный буллет */
-    color: var(--primary-color); /* Цвет буллета */
+    color: var(--primary-color); /* Цвет треугольника */
     position: absolute;
     left: 0;
 }
