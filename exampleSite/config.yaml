@@ -315,19 +315,19 @@ params:
           - icon: fab fa-github
             url: https://github.com/askuts/scoring-model.git
 
-      - title: Анализ NBA игроков
-        content: Провела анализ характеристик NBA игроков и выявила основные закономерности в данных.
+      - title: Выбор кредита
+        content: Разработала модель, предсказывающую выберет ли покупатель кредит от Tinkoff.ru.
         image: /height.png
         featured:
           name: Проект 3
-          link: https://github.com/askuts/baseball-analysis.git
+          link: https://github.com/askuts/boots.git
         badges:
-          - "Numpy"
-          - "Pandas"
+          - "XGboost"
+          - "GridSearchCV"
           - "Pyplot"
         links:
           - icon: fab fa-github
-            url: https://github.com/askuts/baseball-analysis.git
+            url: https://github.com/askuts/boots.git
 
   #Contact
   contact:
