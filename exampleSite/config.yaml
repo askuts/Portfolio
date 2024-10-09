@@ -145,7 +145,7 @@ params:
       enable: true
       name: "Проекты"
       url: /projects
-      download: true
+      download: false
       newPage: false
 
     socialLinks:
