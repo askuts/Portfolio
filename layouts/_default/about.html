@@ -39,37 +39,41 @@
             </div>
             {{ end }}
 
-            <!-- Секция "Обо мне" -->
-            <div class="about-section col-lg-8" id="about-me">
-                <h3>{{ .Params.about.title }}</h3>
-                <div class="about-content">
-                    <ul class="about-content-list">
-                        {{ with split .Params.about.content "\n" }}
-                            {{ range . }}
-                            <li>{{ . }}</li>
-                            {{ end }}
-                        {{ end }}
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Секция "Навыки" -->
-            <div class="skills-section col-lg-8" id="skills">
-                <h3>{{ .Params.skills.title }}</h3>
-                <div class="row">
-                    <div class="col-6">
-                        <ul class="skills-list-left">
-                            {{ range first (div (len .Params.skills.items) 2) .Params.skills.items }}
-                            <li>{{ . }}</li>
+            <!-- Секция "Обо мне" с уникальным классом -->
+            <div class="col-sm-12 col-md-12 col-lg-8 about-content">
+                <div class="about-section" id="about-me">
+                    <h3>{{ .Params.about.title }}</h3>
+                    <div class="about-content">
+                        <ul class="about-content-list">
+                            {{ with split .Params.about.content "\n" }}
+                                {{ range . }}
+                                <li>{{ . }}</li>
+                                {{ end }}
                             {{ end }}
                         </ul>
                     </div>
-                    <div class="col-6">
-                        <ul class="skills-list-right">
-                            {{ range after (div (len .Params.skills.items) 2) .Params.skills.items }}
-                            <li>{{ . }}</li>
-                            {{ end }}
-                        </ul>
+                </div>
+            </div>
+
+            <!-- Секция "Навыки" с отдельным классом -->
+            <div class="col-sm-12 col-md-12 col-lg-8 skills-content">
+                <div class="skills-section" id="skills">
+                    <h3>{{ .Params.skills.title }}</h3>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="skills-list-left">
+                                {{ range first (div (len .Params.skills.items) 2) .Params.skills.items }}
+                                <li>{{ . }}</li>
+                                {{ end }}
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="skills-list-right">
+                                {{ range after (div (len .Params.skills.items) 2) .Params.skills.items }}
+                                <li>{{ . }}</li>
+                                {{ end }}
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
