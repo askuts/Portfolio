@@ -141,12 +141,6 @@ params:
       url: "https://hh.ru/resume/93f42dc3ff0d7b1c960039ed1f52734175794a"
       download: true
       newPage: false
-    button:
-      enable: true
-      name: "Проекты"
-      url: "https://hh.ru/resume/93f42dc3ff0d7b1c960039ed1f52734175794a"
-      download: true
-      newPage: false
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
