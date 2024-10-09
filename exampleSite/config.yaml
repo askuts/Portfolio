@@ -317,7 +317,7 @@ params:
 
       - title: Выбор кредита
         content: Разработала модель, предсказывающую выберет ли покупатель кредит от Tinkoff.ru.
-        image: /height.png
+        image: /tinkoff.png
         featured:
           name: Проект 3
           link: https://github.com/askuts/boots.git
