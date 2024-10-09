@@ -315,14 +315,14 @@ params:
         image: /height.png
         featured:
           name: Проект 3
-          link: https://hugo-profile-2.netlify.app
+          link: https://github.com/askuts/baseball-analysis.git
         badges:
           - "Numpy"
           - "Pandas"
           - "Pylot"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+            url: https://github.com/askuts/baseball-analysis.git
 
   #Contact
   contact:
