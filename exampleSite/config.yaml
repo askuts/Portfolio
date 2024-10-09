@@ -285,7 +285,7 @@ params:
     items:
       - title: Рекомендательная система
         content: Определила ассоциативные правила и сегментировала клиентов, чтобы магазин наиболее эффективно предлагал сопутствующие товары пользователям, что способствовало увеличению продаж
-        image: /cluster_analysis.jpg
+        image: /cluster_analysis.png
         featured:
           name: Проект 1
           link: https://github.com/askuts/Recommendation-system-for-online-store-.git
