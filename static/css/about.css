@@ -12,7 +12,7 @@
 /* Skills Section - Двухколоночный макет и треугольные буллеты */
 .skills-section ul {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Две колонки */
+    grid-template-columns: repeat(2, 1fr) !important; /* Две колонки */
     list-style: none; /* Убираем стандартные маркеры */
     margin: 0;
     padding: 0;
