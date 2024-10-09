@@ -288,14 +288,14 @@ params:
         image: /cluster_analysis.jpg
         featured:
           name: Проект 1
-          link: https://hugo-profile.netlify.app
+          link: https://github.com/askuts/Recommendation-system-for-online-store-.git
         badges:
           - "MS Power BI"
           - "Python"
           - "Apriory"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
+            url: https://github.com/askuts/Recommendation-system-for-online-store-.git
 
       - title: Image Converter
         content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
