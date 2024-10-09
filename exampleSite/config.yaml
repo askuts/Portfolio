@@ -285,7 +285,7 @@ params:
     items:
       - title: Рекомендательная система
         content: Определила ассоциативные правила и сегментировала клиентов, чтобы магазин наиболее эффективно предлагал сопутствующие товары пользователям, что способствовало увеличению продаж
-        image: /rex_london.jpg
+        image: /cluster_analysis.jpg
         featured:
           name: Проект 1
           link: https://hugo-profile.netlify.app
