@@ -1,42 +1,32 @@
-/* Обеспечиваем одноколонное отображение в секции "Обо мне" */
-#about-me .about-content-list {
-    display: block !important; /* Убедитесь, что это блочный элемент */
-    column-count: 1 !important; /* Устанавливаем количество колонок в 1 */
-    list-style-position: outside !important; /* Установите маркеры вне списка */
+/* About Section - Буллеты для секции "Обо мне" */
+.about-content-list {
+    list-style-type: disc; /* Буллеты по умолчанию */
+    padding-left: 1.2rem; /* Отступ слева для списка */
+    margin-top: 1rem;
 }
 
-#about-me .about-content-list li {
-    display: list-item !important; /* Убедитесь, что это отображается как элемент списка */
-    margin-bottom: 0.5em; /* Добавляем расстояние между элементами списка */
+.about-content-list li {
+    margin-bottom: 0.5rem; /* Отступ между строками */
 }
 
-/* Убираем возможные глобальные стили, влияющие на списки */
-.about-section.single-column-list ul {
-    column-count: 1 !important; /* Убедитесь, что у вас одна колонка */
-    padding-left: 20px; /* Добавляем отступ слева для маркеров */
-    margin-bottom: 1.2em; /* Добавляем отступ внизу */
-}
-
-
-/* Секция "Навыки" — отображение в два столбца */
-.skills-section .row {
-    display: flex;
-}
-
-.skills-section .col-6 {
-    padding: 0 15px;
-}
-
+/* Skills Section - Двухколоночный макет и треугольные буллеты */
 .skills-section ul {
-    column-count: 2; /* Две колонки */
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    list-style-type: disc;
-    padding-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Две колонки */
+    list-style: none; /* Убираем стандартные маркеры */
+    margin: 0;
+    padding: 0;
 }
 
-/* Общее правило для списков в секциях */
-#single .page-content ul {
-    list-style-position: outside;
-    padding-left: 1.5em;
+.skills-section ul li {
+    position: relative;
+    padding-left: 20px; /* Отступ слева для буллета */
+    margin-bottom: 10px; /* Отступ между строками */
+}
+
+.skills-section ul li::before {
+    content: "▹"; /* Треугольный буллет */
+    color: var(--primary-color); /* Цвет буллета */
+    position: absolute;
+    left: 0;
 }
