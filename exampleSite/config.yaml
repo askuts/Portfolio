@@ -324,7 +324,7 @@ params:
         badges:
           - "Numpy"
           - "Pandas"
-          - "Pylot"
+          - "Pyplot"
         links:
           - icon: fab fa-github
             url: https://github.com/askuts/baseball-analysis.git
