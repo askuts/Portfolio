@@ -176,12 +176,10 @@ params:
       enable: true
       title: "Вот несколько технологий, с которыми я работала в последнее время:"
       items:
+        - "Python"
         - "MS Power BI"
         - "MS Excel"
-        - "MS PowerPoint"
-        - "Python"
         - "MySQL"
-        - "Stata"
 
   # Experience
   experience:
