@@ -157,20 +157,7 @@ params:
       customIcons:
         - icon: /1708718087_.png
           url: "https://t.me/as_kuts"
-[params.hero]
-  [[params.hero.buttons]]
-  enable = true
-  name = "Button 1"
-  url = "https://example.com/1"
-  download = false
-  newPage = true
 
-  [[params.hero.buttons]]
-  enable = true
-  name = "Button 2"
-  url = "https://example.com/2"
-  download = false
-  newPage = true
   # About
   about:
     enable: true
