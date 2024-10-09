@@ -292,7 +292,7 @@ params:
         badges:
           - "MS Power BI"
           - "Python"
-          - "Apriory"
+          - "Apriori"
         links:
           - icon: fab fa-github
             url: https://github.com/askuts/Recommendation-system-for-online-store-.git
