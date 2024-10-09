@@ -297,29 +297,29 @@ params:
           - icon: fab fa-github
             url: https://github.com/askuts/Recommendation-system-for-online-store-.git
 
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
+      - title: Скоринговая модель
+        content: разработка скоринговой модели, учитывающей широкий спектр качественных факторов и способствующей повышению качества отбора инновационных финтех проектов в банковском секторе.
+        image: /scoring_model.jpg
         featured:
           name: Demo
           link: https://django-converter.herokuapp.com
         badges:
-          - "Django"
-          - "Bootstrap"
+          - "XGboost"
+          - "GridSearchCV"
         links:
           - icon: fab fa-github
             url: https://github.com/gurusabarish/converter
 
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
+      - title: Анализ NBA игроков
+        content: Провела анализ характеристик NBA игроков и выявила основные закономерности в данных.
+        image: /height.jpg
         featured:
           name: Demo V2
           link: https://hugo-profile-2.netlify.app
         badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
+          - "Numpy"
+          - "Pandas"
+          - "Pylot"
         links:
           - icon: fab fa-github
             url: https://github.com/gurusabarish/HugoProfileV2
