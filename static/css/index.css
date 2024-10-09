@@ -211,20 +211,20 @@ header .navbar.animate {
     box-shadow: 0 0 11px rgb(15 80 100 / 20%);
 }
 
-#about ul {
+#about .about-content-list ul {
     display: block; /* Устанавливаем блочное отображение */
     padding: 0; /* Убираем отступы */
     margin: 20px 0px 0px; /* Оставляем отступы сверху */
     list-style: none; /* Убираем маркеры списка */
 }
 
-#about ul li {
+#about .about-content-list ul li {
     position: relative;
     margin-bottom: 10px;
     padding-left: 20px;
 }
 
-#about ul li::before {
+#about .about-content-list ul li::before {
     content: "•";
     color: var(--primary-color);
     position: absolute;
