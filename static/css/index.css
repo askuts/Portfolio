@@ -211,20 +211,20 @@ header .navbar.animate {
     box-shadow: 0 0 11px rgb(15 80 100 / 20%);
 }
 
-#about .about-content-list ul {
+#about .about-me ul {
     display: block; /* Устанавливаем блочное отображение */
     padding: 0; /* Убираем отступы */
     margin: 20px 0px 0px; /* Оставляем отступы сверху */
     list-style: none; /* Убираем маркеры списка */
 }
 
-#about .about-content-list ul li {
+#about .about-me ul li {
     position: relative;
     margin-bottom: 10px;
     padding-left: 20px;
 }
 
-#about .about-content-list ul li::before {
+#about .about-me ul li::before {
     content: "•";
     color: var(--primary-color);
     position: absolute;
@@ -238,7 +238,7 @@ header .navbar.animate {
 }
 
 /* Стили для навыков */
-#about .skills-section ul {
+#about .skills ul {
     display: grid !important; /* Используем сетку */
     grid-template-columns: repeat(2, 1fr); /* Две равные колонки */
     gap: 0px 10px !important; /* Промежуток между элементами */
@@ -248,7 +248,7 @@ header .navbar.animate {
 }
 
 /* Буллет для списка навыков */
-#about .skills-section ul li::before {
+#about .skills ul li::before {
     content: "▹" !important; /* Буллет для навыков */
     color: var(--primary-color); /* Цвет буллета */
     position: absolute; /* Абсолютное позиционирование */
