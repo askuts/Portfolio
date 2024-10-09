@@ -299,22 +299,22 @@ params:
 
       - title: Скоринговая модель
         content: разработка скоринговой модели, учитывающей широкий спектр качественных факторов и способствующей повышению качества отбора инновационных финтех проектов в банковском секторе.
-        image: /scoring_model.jpg
+        image: /scoring_model.png
         featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
+          name: Проект 2
+          link: https://github.com/askuts/scoring-model.git
         badges:
           - "XGboost"
           - "GridSearchCV"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
+            url: https://github.com/askuts/scoring-model.git
 
       - title: Анализ NBA игроков
         content: Провела анализ характеристик NBA игроков и выявила основные закономерности в данных.
-        image: /height.jpg
+        image: /height.png
         featured:
-          name: Demo V2
+          name: Проект 3
           link: https://hugo-profile-2.netlify.app
         badges:
           - "Numpy"
