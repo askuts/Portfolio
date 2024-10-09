@@ -144,7 +144,7 @@ params:
     button2:
       enable: true
       name: "Проекты"
-      url: /projects
+      url: "https://kuts-portfolio.netlify.app/#projects"
       download: false
       newPage: false
 
