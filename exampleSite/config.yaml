@@ -135,13 +135,13 @@ params:
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
-    buttons:
+    button:
       enable: true
       name: "Резюме"
       url: "https://hh.ru/resume/93f42dc3ff0d7b1c960039ed1f52734175794a"
       download: true
       newPage: false
-    buttons:
+    button:
       enable: true
       name: "Проекты"
       url: "https://hh.ru/resume/93f42dc3ff0d7b1c960039ed1f52734175794a"
