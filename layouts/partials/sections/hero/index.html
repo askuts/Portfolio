@@ -1,7 +1,7 @@
 {{ if .Site.Params.hero.enable | default false }}
 <section id="hero" class="py-5 align-middle">
     <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
-        <div class="row align-items-center"> <!-- Добавлен класс выравнивания -->
+        <div class="row align-items-center">
             <!-- Левый блок: Текст и кнопки -->
             <div class="col-lg-8 d-flex flex-column justify-content-center content {{ if .Site.Params.animate }}animate{{ end }}" id="primary-font">
                 <span class="subtitle">
@@ -18,7 +18,7 @@
                 </p>
                 
                 <!-- Блок кнопок -->
-                <div class="d-flex flex-wrap align-items-center">
+                <div class="d-flex flex-wrap align-items-center mb-2">
                     {{ if .Site.Params.hero.button1.enable }}
                     <a href="{{ .Site.Params.hero.button1.url }}" class="btn mx-1" {{ cond .Site.Params.hero.button1.download "download" "" }}
                         {{ if .Site.Params.hero.button1.newPage | default true }}
@@ -39,7 +39,7 @@
                 </div>
                 
                 <!-- Социальные иконки -->
-                <div class="col-auto px-0 h-80 mt-3">
+                <div class="col-auto px-0 h-100 d-flex align-items-center" style="margin-top: -5px;"> <!-- Уменьшаем верхний отступ -->
                     {{- partial "sections/hero/social.html" . -}}
                 </div>
             </div>
