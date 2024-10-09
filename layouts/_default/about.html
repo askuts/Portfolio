@@ -39,7 +39,8 @@
             </div>
             {{ end }}
 
-            <div class="about-section single-column-list" id="about-me">
+            <!-- Секция "Обо мне" -->
+            <div class="about-section col-lg-8" id="about-me">
                 <h3>{{ .Params.about.title }}</h3>
                 <div class="about-content">
                     <ul class="about-content-list">
@@ -52,20 +53,19 @@
                 </div>
             </div>
 
-
-            
-            <div class="skills-section">
+            <!-- Секция "Навыки" -->
+            <div class="skills-section col-lg-8" id="skills">
                 <h3>{{ .Params.skills.title }}</h3>
                 <div class="row">
                     <div class="col-6">
-                        <ul>
+                        <ul class="skills-list-left">
                             {{ range first (div (len .Params.skills.items) 2) .Params.skills.items }}
                             <li>{{ . }}</li>
                             {{ end }}
                         </ul>
                     </div>
                     <div class="col-6">
-                        <ul>
+                        <ul class="skills-list-right">
                             {{ range after (div (len .Params.skills.items) 2) .Params.skills.items }}
                             <li>{{ . }}</li>
                             {{ end }}
@@ -74,10 +74,13 @@
                 </div>
             </div>
 
-    <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
-        <i class="fas fa-angle-up"></i>
-    </button>
+        </div>
+    </div>
 </section>
+
+<button class="p-2 px-3" onclick="topFunction()" id="topScroll">
+    <i class="fas fa-angle-up"></i>
+</button>
 
 <script>
     var topScroll = document.getElementById("topScroll");
