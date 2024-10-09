@@ -1,16 +1,16 @@
 /* About Section - Буллеты для секции "Обо мне" */
-.about-content-list {
+.about-me {
     list-style-type: disc; /* Буллеты по умолчанию */
     padding-left: 1.2rem; /* Отступ слева для списка */
     margin-top: 1rem;
 }
 
-.about-content-list li {
+.about-me li {
     margin-bottom: 0.5rem; /* Отступ между строками */
 }
 
 /* Skills Section - Двухколоночный макет и треугольные буллеты */
-.skills-section ul {
+.skills ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr) !important; /* Две колонки */
     list-style: none; /* Убираем стандартные маркеры */
@@ -18,13 +18,13 @@
     padding: 0;
 }
 
-.skills-section ul li {
+.skills ul li {
     position: relative;
     padding-left: 20px; /* Отступ слева для буллета */
     margin-bottom: 10px; /* Отступ между строками */
 }
 
-.skills-section ul li::before {
+.skills ul li::before {
     content: "▹"; /* Треугольный буллет */
     color: var(--primary-color); /* Цвет буллета */
     position: absolute;
