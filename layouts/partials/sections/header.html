@@ -61,12 +61,13 @@
             </a>
 
             {{ if not (.Site.Params.navbar.disableSearch | default false) }}
-                <div>
-                    <a href="mailto:as.kuts@mail.ru" class="form-control mr-sm-2 d-none d-md-block">
+                <div class="d-flex flex-wrap align-items-center mb-2">
+                    <a href="mailto:as.kuts@mail.ru" class="btn mx-1">
                         as.kuts@mail.ru
                     </a>
                 </div>
             {{ end }}
+
             
 
             <!-- navbar toggler -->
