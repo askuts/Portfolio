@@ -155,6 +155,8 @@ params:
        # - icon: fab fa-x-twitter
        #   url: https://example.com
       customIcons:
+        - icon: /mail.png
+          url: mailto:as.kuts@mail.ru
         - icon: /1708718087_.png
           url: "https://t.me/as_kuts"
 
