@@ -111,7 +111,7 @@ params:
     # showBrandLogo: false # Show brand logo in nav bar | default is true
     brandName: Куць Анастасия # Brand name for the brand | default is the title variable
     disableSearch: false
-      searchPlaceholder: "as.kuts@mail.ru"
+      #searchPlaceholder: "Search"
     stickyNavBar:
       enable : true
       showOnScrollUp : true
